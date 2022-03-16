@@ -1,0 +1,10 @@
+\newcommand{\raiseWarning}[1]{\PackageWarning{Utils}{#1}}
+\newcommand{\raiseError}[1]{\PackageError{Utils}{#1}}
+\newcommand{\raiseMessage}[1]{\typeout{>>> Utils: #1}}
+\newcommand{\rootImages}{Images/empty}
+\renewcommand{\rootImages}{Images/stepper}
+\input{Parts/8.stepper/0.intro.tex}
+\renewcommand{\rootImages}{Images/esp8266}
+\input{Parts/9.esp8266/1.webServer.tex}
+\input{Parts/9.esp8266/2.ideArduino.tex}
+\input{Parts/9.esp8266/3.html.tex}

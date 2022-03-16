@@ -1,0 +1,29 @@
+\documentclass[11pt]{Utils/utils_report}  
+\input{Settings.tex}
+
+
+
+\usepackage{tocloft}
+\input{Make/Glossaries.tex}
+%\makeglossary
+\begin{document}
+
+%\setHeaderImage{Images/aop/aop}{0.8}{Ateliers CREPP}{Ensemble des supports lors des Ateliers CREPP}{Nicolas Le Guerroué}{\today~\\~\pageref{LastPage} pages}
+
+\setHeaderImage{Images/aop/aop}{0.8}{Ateliers CREPP}{Atelier Moteurs et ESP8266}{Club de Robotique et d’Electronique \\Programmable de Ploemeur}{\today~\\~\pageref{LastPage} pages}
+
+\setcounter{page}{2}
+\tableofcontents 
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\newpage
+\setcounter{page}{4}
+\input{Make/Contacts.tex}
+\subsubsection{Versions}
+\input{Make/Versions.tex}
+\input{Output/add_content.tex}
+\newpage
+
+
+%\listoffigures
+%\printglossary
+\end{document} 

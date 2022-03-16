@@ -1,0 +1,121 @@
+{
+		"Constructor of File class ": { 
+        	"scope": "php",
+        	"prefix": "__construct",
+        	"body": [
+			"__construct(${1:$displayErrors})"
+			],
+		"description": "Constructor of File class "},
+		"Get the langage of file ": { 
+        	"scope": "php",
+        	"prefix": "getLanguage",
+        	"body": [
+			"getLanguage(${1:$filename})"
+			],
+		"description": "Get the langage of file "},
+		"Extract filename from path ": { 
+        	"scope": "php",
+        	"prefix": "File::extractFilename",
+        	"body": [
+			"File::extractFilename(${1:$filenamePath},${2:False})"
+			],
+		"description": "Extract filename from path "},
+		"Init the filename to upload ": { 
+        	"scope": "php",
+        	"prefix": "initFile",
+        	"body": [
+			"initFile(${1:$filename})"
+			],
+		"description": "Init the filename to upload "},
+		"Set the folder upload ": { 
+        	"scope": "php",
+        	"prefix": "setFolder",
+        	"body": [
+			"setFolder(${1:$folder})"
+			],
+		"description": "Set the folder upload "},
+		"Get the upload folder name ": { 
+        	"scope": "php",
+        	"prefix": "getFolder",
+        	"body": [
+			"getFolder(${1:})"
+			],
+		"description": "Get the upload folder name "},
+		"Get the filename of uploaded file ": { 
+        	"scope": "php",
+        	"prefix": "getFilename",
+        	"body": [
+			"getFilename(${1:})"
+			],
+		"description": "Get the filename of uploaded file "},
+		"Check if file is available in buffer ": { 
+        	"scope": "php",
+        	"prefix": "file_is_available",
+        	"body": [
+			"file_is_available(${1:'formeName'})"
+			],
+		"description": "Check if file is available in buffer "},
+		"Upload a file from form ": { 
+        	"scope": "php",
+        	"prefix": "uploadFile",
+        	"body": [
+			"uploadFile(${1:$formName},${2:$maxSize})"
+			],
+		"description": "Upload a file from form "},
+		"Read a file ": { 
+        	"scope": "php",
+        	"prefix": "File::readFile",
+        	"body": [
+			"File::readFile(${1:$filename},${2:File::NEWLINE||File::NONEWLINE})"
+			],
+		"description": "Read a file "},
+		"Read file as string ": { 
+        	"scope": "php",
+        	"prefix": "File::readStringFile",
+        	"body": [
+			"File::readStringFile(${1:$filename},${2:File::NEWLINE||File::NONEWLINE})"
+			],
+		"description": "Read file as string "},
+		"Read file as HTML ": { 
+        	"scope": "php",
+        	"prefix": "File::readFileHTML",
+        	"body": [
+			"File::readFileHTML(${1:$filename})"
+			],
+		"description": "Read file as HTML "},
+		"Read items in directory (files or directories) ": { 
+        	"scope": "php",
+        	"prefix": "File::readDirectory",
+        	"body": [
+			"File::readDirectory(${1:$folder},${2:File::DIRECTORIES||File::FILES})"
+			],
+		"description": "Read items in directory (files or directories) "},
+		"Write content in file ": { 
+        	"scope": "php",
+        	"prefix": "File::writeFile",
+        	"body": [
+			"File::writeFile(${1:$filename},${2:$content},${3:File::APPEND||File::WRITE||Fille::OVERWRITE})"
+			],
+		"description": "Write content in file "},
+		"Delete directory content ": { 
+        	"scope": "php",
+        	"prefix": "File::eraseDirectory",
+        	"body": [
+			"File::eraseDirectory(${1:$folder})"
+			],
+		"description": "Delete directory content "},
+		"Import CSS content as HTML format ": { 
+        	"scope": "php",
+        	"prefix": "import_CSS",
+        	"body": [
+			"import_CSS(${1:$CSS_Folder})"
+			],
+		"description": "Import CSS content as HTML format "},
+		"Import JS content as HTML format ": { 
+        	"scope": "php",
+        	"prefix": "import_JS",
+        	"body": [
+			"import_JS(${1:$JS_Folder})"
+			],
+		"description": "Import JS content as HTML format "},
+}

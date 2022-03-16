@@ -1,0 +1,62 @@
+\appendix
+\part{Annexes}
+\chapter{Utilisation de l'ESP12 sous Arduino}
+
+\img{\rootImages/nodemcu.png}{ESP12 NodeMCU}{0.8}
+
+\section{Installation des bibliothèques et cartes ESP8266}
+
+La carte ESP12 NodeMCU est prévue pour être programmée directement via l'IDE\footnote{IDE : Environnement de Développement Intégré} Arduino.\\
+Cette carte fait partie de la grande famille des ESP8266.\\
+Pour installer les bibliothèques et cartes sur le logiciel Arduino, il faut réaliser les étapes suivantes : 
+
+
+\begin{items}{blue}{\Triangle}
+
+    \item Ouvrir les préférences du logiciel Arduino dans \lbl{blue}{KEY}{Fichiers - Préférences}
+    \img{\rootImages/preference.png}{Préférences Arduino}{0.5}
+
+    \item Dans le champ \bold{URL de gestionnaire de cartes supplémentaires}, mettre le lien suivant : \\
+    \link{\url{http://arduino.esp8266.com/stable/package\_esp8266com\_index.json}}
+    \messageBox{Avertissement}{orange}{white}{Veuillez vérifier l'URL après le copier-coller car les underscores ("tirets du 8") peuvent disparaître.}{black}
+    \img{\rootImages/url.png}{Lien pour les cartes ESP8266}{0.5}
+    
+    Puis faire \lbl{blue}{KEY}{OK}
+
+    
+
+    \item Fermer le logiciel Arduino
+
+    \item Lancer le logiciel Arduino
+    \item Allez dans \lbl{blue}{KEY}{Outils - Type de carte - Gestionnaire de carte} 
+    \img{\rootImages/boardManager.png}{Gestionnaire des cartes ESP8266}{0.5}
+    
+    et faire une recherche avec le mot clé \lbl{blue}{KEY}{esp8266}
+
+    \img{\rootImages/install.png}{Installation des bibliothèques ESP8266}{0.5}
+
+    Il ne vous reste plus qu'à cliquer sur \lbl{blue}{KEY}{Installer} et redémarrer le logiciel Arduino.
+\end{items}
+
+
+
+\section{Recherche des cartes ESP8266}
+
+
+Lors de la programmation d'une carte ESP8266 NodeMCU, il faudra donc aller dans \\
+\lbl{blue}{KEY}{Outils - Type de carte - ESP8266 Boards NodeMCU X.X (ESP12 Module)} 
+
+\img{\rootImages/espFull.png}{Sélection de la carte ESP12}{0.4}
+
+
+Afin de tester le bon fonctionnement, nous vous invitons à tester le programme \bold{Blink} disponible dans les exemples.
+
+\img{\rootImages/blink.png}{Emplacement de l'exemple Blink}{0.4}
+
+La led bleue de l'ESP12 devrait clignoter si l'installation s'est correctement effectuée.
+
+\section{Recherche des cartes Arduino}
+
+Pour la programmation des cartes Arduino, il suffira de sélectionner \\
+\lbl{blue}{KEY}{Outils - Type de carte - Arduino AVR Boards - Carte X} en fonction du modèle de votre carte.
+

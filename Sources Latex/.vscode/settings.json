@@ -1,0 +1,37 @@
+{
+    "actionButtons": {
+        "defaultColor": "white", // Can also use string color names.
+        "loadNpmCommands":false, // Disables automatic generation of actions for npm commands.
+        "reloadButton":"♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+        "commands": [
+            {
+                "cwd": "${workspaceFolder}", 	// Terminal initial folder ${workspaceFolder} and os user home as defaults
+                "name": "Display PDF",
+                "color": "white",
+                "singleInstance": true,
+                "command": "code main.pdf", 
+            },
+            {
+                "name": "Compilation (full)",
+                "color": "white",
+                "command": "./make --full",
+            },
+            {
+                "name": "Compilation (light)",
+                "color": "white",
+                "command": "./make",
+            },
+            {
+                "name": "Display errors",
+                "color": "red",
+                "command": "code render_report_log.txt",
+            },
+            {
+                "name": "Checking",
+                "color": "white",
+                "command": "./make --check",
+            }
+        ]
+    }
+}
+
